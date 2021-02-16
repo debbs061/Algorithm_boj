@@ -63,7 +63,6 @@ public class Q2178 {
                 
             }
         }
-        
         System.out.println(dist[n-1][m-1]);
     }
 }
