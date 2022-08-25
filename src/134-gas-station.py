@@ -11,7 +11,7 @@ class Solution:
         for i in range(len(gas)):
             total += gas[i] - cost[i]
             if total < 0:
-                start += 1
+                start = i + 1
                 total = 0
 
         return start
