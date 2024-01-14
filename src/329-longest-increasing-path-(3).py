@@ -17,8 +17,8 @@ class Solution:
                 nx, ny = x + dx, y + dy
                 if nx < 0 or ny < 0 or nx == ROWS or ny == COLS or matrix[nx][ny] <= matrix[x][y]:
                     continue
-                maxLen = max(dfs(nx, ny) + 1, maxLen)
-            cache[(x, y)] = maxLen
+                maxLen = max(dfs(nx, ny), maxLen)
+            cache[(x, y)] = maxLen + 1
             return cache[(x, y)]
 
         res = 0
